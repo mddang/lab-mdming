@@ -4,16 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Front End Web 100</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
-    </header>
-    <main>
-        
-    </main>
+        <header>
+        </header>
+        <main class="container">
+            <div class="aler alert-info">
+                <h3>Tip Calculator</h3>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="number"
+                       class="form-control"
+                       id="dollarInput">
+            </div>
+            <div class="btn-group"
+                 role="group"
+                 aria-label="Tip percentage">
+                <button type="button"
+                        id="tip1"
+                        value="0.1"
+                        class="btn btn-secondary tip">10%</button>
+                <button type="button"
+                        id="tip2"
+                        value="0.15"
+                        class="btn btn-secondary tip">15%</button>
+                <button type="button"
+                        id="tip3"
+                        value="0.2"
+                        class="btn btn-secondary tip">20%</button>
+            </div>
+            <div class="aler">
+                <h5>You are tipping <span id="selectedTip"></span></h5>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Bill Amount: $<span id="totalInput"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Tip Percentage: <span id="percentTip"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Amount of tip: $<span id="totalTip"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Total to be Paid: $<span id="totalPaid"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </main>
 </body>
 
 </html>
